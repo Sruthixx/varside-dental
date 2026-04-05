@@ -53,3 +53,10 @@ window.addEventListener('scroll', () => {
     nav.style.background = 'rgba(7,16,26,0.85)';
   }
 });
+// MOBILE MENU TOGGLE
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});

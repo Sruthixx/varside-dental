@@ -651,3 +651,41 @@ footer {
   }
 
 }
+/* MOBILE NAVBAR FIX */
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  color:white;
+  cursor:pointer;
+}
+
+/* MOBILE VIEW */
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#07101a;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:20px 0;
+
+    /* HIDDEN BY DEFAULT */
+    display:none;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .nav-cta{
+    display:none;
+  }
+}
